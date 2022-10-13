@@ -2,6 +2,10 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 auto;
 }
@@ -25,14 +29,51 @@ main {
   margin: 0 auto;
   padding: 4em 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .central-content {
   width: 70%;
 }
 
+.side-content {
+  max-width: 30%;
+  padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  margin: 0;
+  text-align: center;
+}
+
 p {
   font-weight: 200;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+#Studies li {
+  list-style-type: disc;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 }
 
 .fun-fact-grid {
@@ -66,24 +107,53 @@ img {
   max-width: 100%;
 }
 
-.contact-form {
+figcaption {
+  font-size: 1.5rem;
+}
+
+.contact-form form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-form form,
+input::placeholder {
+  font: 1.5rem sans-serif;
+}
+
+.email-input,
+.comment-input {
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  margin: 1em 0;
+  padding: 0 1em;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 100%;
+  padding: 1em;
 }
 
 .submit-form {
   background-color: #00796b;
   color: white;
   border: none;
-  border-radius: 1%;
-}
-
-aside {
-  padding: 1em;
-  height: 100%;
+  border-radius: 15px;
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 1em;
+  font-size: 1.5rem;
+  padding: 0.5em;
 }
 
 aside li {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 footer {
