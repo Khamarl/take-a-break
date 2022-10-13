@@ -200,11 +200,7 @@ footer ul {
     flex-direction: column;
   }
 
-  input{
-    margin: 1em 0;
-    height: 1.5rem;
-  }
-
+ 
   li{
     font-size: 15px;
   }
