@@ -1,14 +1,22 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0 auto;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
-    background-color: #003b49;
+    background-color: #d3b8ae;
+    justify-content: space-around;
     margin: 0;
     color: #d0d3d4;
     border-top: 1px solid grey;
     padding-bottom: 3px;
+}
 
+img {
+    max-width: 100%;
 }
