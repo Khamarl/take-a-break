@@ -31,8 +31,20 @@ main {
   width: 70%;
 }
 
+h2,
+h3,
+h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h5 {
+  margin: 0;
+}
+
 p {
   font-weight: 200;
+  line-height: 2;
 }
 
 .fun-fact-grid {
@@ -66,8 +78,22 @@ img {
   max-width: 100%;
 }
 
-.contact-form {
+.contact-form form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.email-input,
+.comment-input {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  width: 80%;
+  margin: 1em 0 0 1em;
 }
 
 .submit-form {
@@ -80,6 +106,7 @@ img {
 aside {
   padding: 1em;
   height: 100%;
+  position: fixed;
 }
 
 aside li {
