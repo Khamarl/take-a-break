@@ -210,4 +210,60 @@ footer ul {
     font-weight: 700;
   }
 
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    
+    .fun-fact-grid{
+       display: flex;
+       flex-direction: column;
+    }
+    .fun-fact{
+        height: 25vh
+        
+    }
+    .nav-list{
+        justify-content: space-between;
+    }
+    h2,
+    h3,
+    h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+    line-height: 2;
+    font-size: 1rem;
+  }
+
+  footer ul {
+    justify-content: space-around;
+  }
+
+  .contact-form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+  }
+  .email-input, .comment-input {
+
+    height: 3em;
+   
+  }
+  input#comment {
+    margin-left: 0;
+  }
+
+  
+  .submit-form:hover {
+    background-color: palegreen;
+    color: #00796b;
+   
+
 }
