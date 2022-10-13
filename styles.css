@@ -268,3 +268,86 @@ p {
 
 }
 }
+
+
+@media screen and (max-width: 600px){
+
+  main{
+    flex-flow: wrap row;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  h2{
+    text-align: left;
+  }
+
+  .central-content{
+    margin-top:2em;
+    width: 90%;
+  }
+
+  .fun-fact-grid{
+    display: flex;
+    flex-flow: wrap column;
+  }
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .submit-form{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    margin-top: 2.5em;
+    padding: 1.5em;
+    position: static;
+  }
+
+  #Activites{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1.5px solid black;
+    margin: 2em;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  li{
+    margin: 0.2em;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+  footer ul{
+    flex-direction: column;
+  }
+
+  #comment{
+    padding: 2em;
+  }
+
+  .side-content{
+    max-width: 100%;
+  }
+
+  
+
+}
