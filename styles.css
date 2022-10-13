@@ -183,10 +183,7 @@ footer ul {
 
 
 @media screen and (max-width: 1200px) {
-  body{
-    background-color: antiquewhite;
-  }
-
+  
   h2,h3,h5 {
     font-size: 1.6em;
   }
@@ -204,11 +201,7 @@ footer ul {
     flex-direction: column;
   }
 
-  input{
-    margin: 1em 0;
-    height: 1.5rem;
-  }
-
+ 
   li{
     font-size: 15px;
   }
@@ -220,5 +213,145 @@ footer ul {
   .submit-form{
     font-weight: 700;
   }
+
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    
+    .fun-fact-grid{
+       display: flex;
+       flex-direction: column;
+    }
+    .fun-fact{
+        height: 25vh
+        
+    }
+    .nav-list{
+        justify-content: space-between;
+    }
+    h2,
+    h3,
+    h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+    line-height: 2;
+    font-size: 1rem;
+  }
+
+  footer ul {
+    justify-content: space-around;
+  }
+
+  .contact-form  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+  }
+  .email-input, .comment-input {
+
+    height: 3em;
+   
+  }
+  input#comment {
+    margin-left: 0;
+  }
+
+  
+  .submit-form:hover {
+    background-color: palegreen;
+    color: #00796b;
+   
+
+}
+}
+
+
+@media screen and (max-width: 600px){
+
+  main{
+    flex-flow: wrap row;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+
+  h2{
+    text-align: left;
+  }
+
+  .central-content{
+    margin-top:2em;
+    width: 90%;
+  }
+
+  .fun-fact-grid{
+    display: flex;
+    flex-flow: wrap column;
+  }
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .submit-form{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    margin-top: 2.5em;
+    padding: 1.5em;
+    position: static;
+  }
+
+  #Activites{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1.5px solid black;
+    margin: 2em;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  li{
+    margin: 0.2em;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+  footer ul{
+    flex-direction: column;
+  }
+
+  #comment{
+    padding: 2em;
+  }
+
+  .side-content{
+    max-width: 100%;
+  }
+
+  
 
 }
