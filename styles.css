@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a,
+a:visited,
+.copyright {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 4em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.central-content {
+  width: 70%;
+}
+
+.side-content {
+  max-width: 30%;
+  padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-weight: 200;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+#Studies li {
+  list-style-type: disc;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+.fun-fact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.fun-fact {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 1%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav-list {
+  display: flex;
+  background-color: #00796b;
+  justify-content: space-around;
+  padding: 1em 3.75em;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 1.5rem;
+}
+
+.contact-form form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-form form,
+input::placeholder {
+  font: 1.5rem sans-serif;
+}
+
+.email-input,
+.comment-input {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1em 0;
+  padding: 0 1em;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 100%;
+  padding: 1em;
+}
+
+.submit-form {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 1em;
+  font-size: 1.5rem;
+  padding: 0.5em;
+}
+
+aside li {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #00796b;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+#study-link, #study-link:visited{
+  color: #00796b;
+  text-decoration: none;
+}
+
+#study-points li{
+  list-style-type: disc;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  body{
+    background-color: antiquewhite;
+  }
+
+  h2,h3,h5 {
+    font-size: 1.6em;
+  }
+
+  p{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  #fun-things li{
+    font-size: 15px;
+  }
+
+  .email-input, .comment-input {
+    flex-direction: column;
+  }
+
+  input{
+    margin: 1em 0;
+    height: 1.5rem;
+  }
+
+  li{
+    font-size: 15px;
+  }
+
+  label{
+    font-weight: 600;
+  }
+
+  .submit-form{
+    font-weight: 700;
+  }
+
+}
