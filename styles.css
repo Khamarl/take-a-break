@@ -335,6 +335,11 @@ footer ul {
     padding: 0;
   }
 
+  .nav-list a:hover{
+    background-color: #00796b;
+    opacity: 0.3;
+  }
+
   li {
     margin: 0.2em;
   }
